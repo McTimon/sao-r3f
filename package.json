@@ -1,0 +1,52 @@
+{
+  "name": "react-three-next",
+  "version": "2.0.0",
+  "authors": [
+    "Renaud ROHLINGER <https://twitter.com/onirenaud>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "lint": "yarn prettier && yarn eslint",
+    "eslint": "next lint --fix --dir src",
+    "prettier": "prettier --list-different \"./src/**/*.{js,jsx,md}\"",
+    "dev": "next dev",
+    "build": "next build",
+    "export": "EXPORT=true next build && EXPORT=true next export",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@react-three/drei": "^7.22.9",
+    "@react-three/fiber": "^7.0.21",
+    "glsl-random": "^0.0.5",
+    "next": "^12.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "short-uuid": "^4.2.0",
+    "three": "^0.135.0",
+    "three-stdlib": "^2.5.10"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^11.1.2",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^12.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-tailwind": "^0.2.1",
+    "file-loader": "^6.2.0",
+    "glslify": "^7.1.1",
+    "glslify-loader": "^2.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "next-offline": "^5.0.5",
+    "postcss": "^8.4.4",
+    "prettier": "^2.3.2",
+    "raw-loader": "^4.0.2",
+    "tailwindcss": "^2.2.19",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.64.4"
+  }
+}
